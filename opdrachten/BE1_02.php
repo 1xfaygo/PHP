@@ -4,20 +4,23 @@
 
 <?php
 function tafelvn($x){ 
-$number = array(3);
-foreach($number as $value){
+
+  echo "<br>";
   for ($i = 0; $i <= 10; $i++) {
-    $totaal = $number[0]*$i;
-  echo "The number is:" .$totaal. "<br>";
-  }
+      $totaal = $i*$x;
+    echo $i.'x' .$x.'='.$totaal. "<br>";
+    }
 }
-echo "<br>";
-for ($i = 0; $i <= 10; $i++) {
-    $totaal = $i*$x;
-  echo "The number is:" .$totaal. "<br>";
-  }
+tafelvn(6);
+$numbers = array(3,6,8,12);
+foreach($numbers as $value){
+  tafelvn($value);
+  // echo 'getal uit array: '.$value.'<br>';
+  // for ($i = 0; $i <= 10; $i++) {
+  //   echo 'tafel van '.$value.'x'.$i.'='.$value*$i.'<br>';
+  // }
+  echo '<br>';
 }
-tafelvn(6)
 ?>  
 
 </body>
