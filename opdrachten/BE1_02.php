@@ -2,12 +2,22 @@
 <html>
 <body>
 
-<?php  
-$tafelvn6 = 6;
-for ($x = 0; $x <= 10; $x++) {
-    $totaal = $tafelvn6*$x;
+<?php
+function tafelvn($x){ 
+$number = array(3);
+foreach($number as $value){
+  for ($i = 0; $i <= 10; $i++) {
+    $totaal = $number[0]*$i;
   echo "The number is:" .$totaal. "<br>";
+  }
 }
+echo "<br>";
+for ($i = 0; $i <= 10; $i++) {
+    $totaal = $i*$x;
+  echo "The number is:" .$totaal. "<br>";
+  }
+}
+tafelvn(6)
 ?>  
 
 </body>
